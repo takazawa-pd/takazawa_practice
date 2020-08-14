@@ -65,6 +65,9 @@
     </div>
 @endsection
 
+<<<<<<< HEAD
 <!--
 両方解決だお！！！
+
+chenage!!!
 -->
