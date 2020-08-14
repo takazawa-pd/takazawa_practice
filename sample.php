@@ -8,7 +8,7 @@
                 投稿の編集
             </h1>
 
-            <form class="mb-4" method="post" action="{{ route('posts.update',['post' => $post]) }}">
+            <form class="mb-5" method="post" action="{{ route('posts.update',['post' => $post]) }}">
                 @csrf
                 @method('PUT')
 
