@@ -1,9 +1,9 @@
-@extends('layout');
+@extends('layout')
 
 @section('content')
     <div class="container mt-2">
         <div class="border p-4">
-
+        
             <h1 class="h5 mb-4">
                 投稿の編集
             </h1>
@@ -26,7 +26,7 @@
                         >
                         @if($errors->has('title'))
                             <div class="invalid-feedback">
-                                {{ $errors->first('title'); }}
+                                {{ $errors->first('title') }}
                             </div>
                         @endif
                     </div>
@@ -50,12 +50,12 @@
                         @endif
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mb-4">
                         <a class="btn btn-secondary" href="{{ route('posts.show',['post' => $post]) }}">
                             キャンセル
                         </a>
-                        <button type="submit" class="btn btn-primary">
-                            更新する
+                        <button class="btn btn-primary">
+                            編集する
                         </button>
                     </div>
                 </fieldset>
@@ -64,13 +64,3 @@
         </div>
     </div>
 @endsection
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<!--
-両方解決だお！！！
-
-chenage!!!
-
-変更しました！
--->
