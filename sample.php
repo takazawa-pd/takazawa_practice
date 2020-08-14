@@ -33,6 +33,14 @@
                 </h2>
                 
                 <form class="mb-4" method="post" action="{{ route('comments.store') }}">
+                    @csrf
+
+                    <input
+                        name="post_id"
+                        type="hidden"
+                        value="{{ $post->id }}"
+                    >
+
                     <div class="form-group">
                         <label for="body">
                             本文
@@ -52,8 +60,8 @@
                         @endif
                     </div>
 
-                    <div class="mb-4">
-                        <button class="btn btn-primary">
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-primary">
                             コメントする
                         </button>
                     <div>
