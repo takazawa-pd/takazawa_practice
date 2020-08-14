@@ -50,7 +50,7 @@
                         @endif
                     </div>
 
-                    <div class="mt-4">
+                    <div class="mt-5">
                         <a class="btn btn-secondary" href="{{ route('posts.show',['post' => $post]) }}">
                             キャンセル
                         </a>
